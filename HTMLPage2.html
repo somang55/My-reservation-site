@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>콘서트 예매</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fffefc;
+            padding: 30px;
+            line-height: 1.6;
+        }
+
+        h2 {
+            margin-top: 40px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .checkbox-group, .radio-group, .select-group {
+            margin-top: 10px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 6px;
+            cursor: pointer;
+        }
+
+        .seating {
+            margin: 20px 0;
+        }
+
+            .seating img {
+                width: 300px;
+                border: 1px solid #ccc;
+                border-radius: 8px;
+            }
+    </style>
+</head>
+<body>
+
+    <h1>콘서트 예매</h1>
+
+    <div class="section">
+        <h2>날짜 선택</h2>
+        <div class="checkbox-group">
+            <label><input type="radio" name="date" value="2025-07-24" checked> 2025.07.24</label>
+            <label><input type="radio" name="date" value="2025-07-25"> 2025.07.25</label>
+            <label><input type="radio" name="date" value="2025-07-26"> 2025.07.26</label>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>좌석 선택</h2>
+        <div class="select-group">
+            <label>
+                열 선택:
+                <select>
+                    <option>A열</option>
+                    <option>B열</option>
+                    <option>C열</option>
+                    <option>D열</option>
+                    <option>E열</option>
+                    <option>F열</option>
+                </select>
+            </label>
+            <label>
+                좌석 번호:
+                <select>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                </select>
+            </label>
+        </div>
+
+        <div class="seating">
+            <img src="IMG_3920.jpeg" alt="좌석 배치도"> <!-- 임시 이미지 URL -->
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>결제 수단</h2>
+        <div class="radio-group">
+            <label><input type="radio" name="payment" value="card"> 신용카드</label>
+            <label><input type="radio" name="payment" value="phone"> 휴대폰 결제</label>
+            <label><input type="radio" name="payment" value="transfer" checked> 무통장입금</label>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>쿠폰 사용</h2>
+        <div class="radio-group">
+            <label><input type="radio" name="coupon" value="yes" checked> 쿠폰 사용(O)</label>
+            <label><input type="radio" name="coupon" value="no"> 쿠폰 사용(X)</label>
+        </div>
+        <button type="submit">다음</button>
+    </div>
+
+</body>
+</html>

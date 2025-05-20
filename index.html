@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html>
+
+<html lang="ko" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>제목</title>
+</head>
+<style>
+    body {
+        background-color: #fffafc;
+        font-family: 'Arial', sans-serif;
+        color: #000;
+        margin: 30px;
+    }
+
+    h1 {
+        color: #7c3aed;
+        font-size: 36px;
+        border-bottom: 3px solid #000;
+        display: flex;
+        align-items: center;
+    }
+
+        h1::before {
+            content: '🍇';
+            margin-right: 10px;
+        }
+
+    .notice {
+        background-color: #e6dfff;
+        padding: 10px;
+        font-weight: bold;
+        margin: 10px 0 20px;
+        border-radius: 5px;
+        width: fit-content;
+    }
+
+    .concert {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 40px;
+    }
+
+        .concert img {
+            width: 200px;
+            margin-right: 20px;
+            border-radius: 10px;
+        }
+
+    .concert-details {
+        font-size: 18px;
+    }
+
+        .concert-details h2 {
+            color: #9b5de5;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .concert-details p {
+            margin: 4px 0;
+        }
+
+    .footer {
+        margin-top: 30px;
+        font-weight: bold;
+    }
+</style>
+
+
+</head>
+
+<body>
+
+
+
+    <h1>콘서트 티켓 예매</h1>
+
+    <div class="notice">아이유 콘서트 예매 20분 전 ~</div>
+
+
+
+    <!-- 아이유 콘서트 -->
+
+    <div class="concert">
+
+        <img src="https://img.tenasia.co.kr/photo/202308/BF.34299180.1.jpg" alt="아이유 콘서트 포스터">
+
+        <div class="concert-details">
+
+            <h2>The Golden Hour</h2>
+
+            <p>D-day | 17:00 오픈</p>
+
+            <p>2025.07.24 ~ 2025.07.26</p>
+
+            <p>아티스트: 아이유</p>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- 임영웅 콘서트 -->
+
+    <div class="concert">
+
+        <img src="https://cdn.mhns.co.kr/news/photo/202309/561281_687071_2525.jpg" alt="임영웅 콘서트 포스터">
+
+        <div class="concert-details">
+
+            <h2>IM HERO</h2>
+
+            <p>D-2 | 20:00 오픈</p>
+
+            <p>2025.09.05 ~ 2025.09.10</p>
+
+            <p>아티스트: 임영웅</p>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="footer">고객센터 : 010-1234-5678</div>
+
+
+
+
+
+</body>
+</html>
